@@ -16,7 +16,7 @@ services:
       - influxdb
     volumes:
       # Mount for telegraf config
-      - ./telegraf/mytelegraf.conf:/etc/telegraf/telegraf.conf:ro
+      - ./telegraf/mytelegraf.conf:/etc/telegraf/telegraf.conf:rw
     env_file:
       - influxv2.env
 
